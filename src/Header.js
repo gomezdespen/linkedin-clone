@@ -6,12 +6,10 @@ function Header() {
     return (
        
         <div className="header">
-            <h1>this is a header</h1>
-
             <div className="header__left">
-                <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt=""/>
+                <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt="#"/>
 
-                <div className="header_search">
+                <div className="header__search">
                     <SearchIcon />
                     <input type="text"/>
                 </div>

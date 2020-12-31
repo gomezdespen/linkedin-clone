@@ -35,7 +35,7 @@ function Sidebar() {
             <div className="sidebar__bottom">
                 <p>Recent</p>
                 {recentItem('reactjs')}
-                {recentItem('rprogramming')}
+                {recentItem('programming')}
                 {recentItem('softwareengineering')}
                 {recentItem('design')}
                 {recentItem('developer')}
@@ -47,3 +47,4 @@ function Sidebar() {
 }  
 
 export default Sidebar;
+ 

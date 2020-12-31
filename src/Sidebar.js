@@ -3,15 +3,25 @@ import './Sidebar.css';
 import {Avatar} from '@material-ui/core';
 
 function Sidebar() {
+
+    const recentItem =(topic) =>(
+        <div className="sidebar__recentItem">
+            <span className="sidebar__hash">#</span>
+            <p>{topic}</p>
+        </div>
+    )
+
     return (
         <div className="sidebar">
-            <div className="sidbar__top">
-                <img src="https://images.unsplash.com/photo-1608644611918-a3bf78190890?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80" alt=""/>
+            <div className="sidebar__top">
+                <img src="https://images.unsplash.com/photo-1608578919812-f8b9ea0d717d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt=""/>
                 <Avatar className='sidebar__avatar' />
                 <h2>Daniel Gomez</h2>  
                 <h4>gomezdespen@gmail.com</h4>
             </div>
+
             <div className="sidebar__stats">
+
                 <div className="sidebar__stat">
                     <p>Who viewed you</p>
                     <p className="sidebar__statNumber">2,543</p>
@@ -24,9 +34,16 @@ function Sidebar() {
 
             <div className="sidebar__bottom">
                 <p>Recent</p>
+                {recentItem('reactjs')}
+                {recentItem('rprogramming')}
+                {recentItem('softwareengineering')}
+                {recentItem('design')}
+                {recentItem('developer')}
+                
             </div>
+            
         </div>
     )
-}
+}  
 
 export default Sidebar;
